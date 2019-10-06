@@ -1,0 +1,46 @@
+<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>
+    Login
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content padding>
+    <form #form="ngForm" (ngSubmit)="login(form)">
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              <h3>Login</h3>
+              <h4>Kurniawan Footware</h4>
+            </div>
+            <div padding>
+                <ion-input name="email" type="email" placeholder="your@email.com" ngModel required></ion-input>
+
+                <ion-input name="password" type="password" placeholder="Password" ngModel required></ion-input>
+            </div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+              <ion-button size="medium" type="submit" expand="block">Login</ion-button>
+          </ion-col>
+          <ion-col>
+              <ion-button size="medium" type="submit" color="success" expand="block">Register</ion-button>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col text-center>
+            <div class='lp-pass'>
+                Forgot password ? Click Here.
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
+  
+  

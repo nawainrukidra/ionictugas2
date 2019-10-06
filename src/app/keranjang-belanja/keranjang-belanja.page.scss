@@ -1,0 +1,35 @@
+.thumbnail {
+    height: 70px;
+    width: 50px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+
+.content {
+    margin: 20px;
+    border-radius: 3px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+
+ion-content {
+    --background: #eee;
+}
+
+ion-item {
+    overflow: hidden;
+}
+
+ion-grid {
+    overflow: hidden;
+}
+
+.produk {
+    margin-top: 10px;
+}
+
+.buy-all {
+    margin: 0 20px;
+}
